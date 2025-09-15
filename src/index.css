@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+:root {
+  --gray-dark: #494949;
+  --gray-light: #b6b6b6;
+  --font-sans: "Inter";
+  --font-mono: "JetBrains Mono";
+}
+
+body {
+  background-color: black;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  height: 10px;
+  width: 10px;
+  background-color: black;
+  border: solid var(--gray-dark) 1px;
+}
