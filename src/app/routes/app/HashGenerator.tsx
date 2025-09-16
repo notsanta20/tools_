@@ -1,24 +1,15 @@
 import Header from "../Header";
-import TextArea from "../../../components/ui/forms/TextArea";
-import CopyInput from "../../../components/ui/forms/CopyInput";
+import GenerateHash from "./GenerateHash";
+import VerifyHash from "./VerifyHash";
 
 function HashGenerator() {
   return (
     <>
-      <main className="bg-black text-white font-(family-name:--font-mono) flex flex-col gap-2 py-3 px-[20%]">
+      <main className="flex flex-col gap-4 h-full">
         <Header />
-        <section className="p-2 flex flex-col gap-3">
-          <h2>hash generator</h2>
-          <form action="" className="flex flex-col gap-2">
-            <TextArea label="Text" placeholder="input string to hash" />
-            <CopyInput label="salt" placeholder="random salt" checkBox={true} />
-            <CopyInput
-              label="hashcode"
-              placeholder="hashcode"
-              checkBox={false}
-            />
-          </form>
-        </section>
+        <h2 className="px-2 font-semibold">hash generator</h2>
+        <GenerateHash />
+        <VerifyHash />
       </main>
     </>
   );
