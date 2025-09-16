@@ -1,4 +1,4 @@
-import { useState, type MouseEventHandler } from "react";
+import { useState } from "react";
 import copy from "../../../assets/copy.svg";
 import copyToClipboard from "../../../utils/copyToClipboard";
 

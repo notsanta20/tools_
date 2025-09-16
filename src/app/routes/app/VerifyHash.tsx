@@ -36,8 +36,8 @@ function VerifyHash() {
   }
 
   function clearGenerator() {
-    setText((t) => (t = ""));
-    setHash((t) => (t = ""));
+    setText("");
+    setHash("");
   }
 
   return (

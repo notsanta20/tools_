@@ -1,12 +1,4 @@
-import type { MouseEventHandler } from "react";
-
-function ClearButton({
-  label,
-  func,
-}: {
-  label: string;
-  func: MouseEventHandler<HTMLButtonElement>;
-}) {
+function ClearButton({ label, func }: { label: string; func: Function }) {
   return (
     <input
       type="button"

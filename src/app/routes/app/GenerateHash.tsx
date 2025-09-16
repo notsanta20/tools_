@@ -8,7 +8,6 @@ import TextArea from "../../../components/ui/forms/TextArea";
 import CopyInput from "../../../components/ui/forms/CopyInput";
 import SubmitButton from "../../../components/ui/forms/SubmitButton";
 import ClearButton from "../../../components/ui/forms/ClearButton";
-import copyToClipboard from "../../../utils/copyToClipboard";
 
 function GenerateHash() {
   const [hash, setHash] = useState<string>("");
@@ -35,12 +34,8 @@ function GenerateHash() {
   }
 
   function clearGenerator() {
-    setText((t) => (t = ""));
-    setHash((h) => (h = ""));
-  }
-
-  function copyHash() {
-    copyToClipboard(hash);
+    setText("");
+    setHash("");
   }
 
   return (
