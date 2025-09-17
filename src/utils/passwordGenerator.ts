@@ -53,7 +53,6 @@ const alphabets: Array<string> = [
   "Y",
   "Z",
 ];
-
 const numbers: Array<string> = [
   "1",
   "2",
@@ -89,7 +88,11 @@ const symbols: Array<string> = [
 
 function passwordGenerator(total: number, num: number, symbol: number): string {
   let password: Array<string> = [];
-  const totalSize: totalSize = generateSize(total, parseInt(num), symbol);
+  const totalSize: totalSize = generateSize(
+    Number(total),
+    Number(num),
+    Number(symbol)
+  );
 
   const totalLetters: number = totalSize.totalLetters;
   const totalNumbers: number = totalSize.totalNumbers;
