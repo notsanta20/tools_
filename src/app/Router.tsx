@@ -5,6 +5,7 @@ import ErrorPage from "./routes/ErrorPage";
 import Header from "./routes/Header";
 import Footer from "./routes/Footer";
 import UnderConstruction from "./routes/UnderConstruction";
+import PasswordGenerator from "./routes/app/PasswordGenerator";
 
 function Router() {
   return (
@@ -14,7 +15,7 @@ function Router() {
         <Route path="/" element={<Home />} />
         <Route path="/all-tools" element={<UnderConstruction />} />
         <Route path="/hash-generator" element={<HashGenerator />} />
-        <Route path="/password-generator" element={<UnderConstruction />} />
+        <Route path="/password-generator" element={<PasswordGenerator />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
