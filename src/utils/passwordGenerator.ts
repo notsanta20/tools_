@@ -141,7 +141,7 @@ function generateSize(total: number, num: number, symbol: number): totalSize {
   const maxLetters: number = total - num - symbol;
   const totalLetters: number =
     Math.floor(Math.random() * (maxLetters - 4 + 1)) + 4;
-  const maxNUmbers: number = total - totalLetters;
+  const maxNUmbers: number = total - totalLetters - symbol;
   const totalNumbers: number =
     Math.floor(Math.random() * (maxNUmbers - num + 1)) + num;
   const totalSymbols: number = total - totalLetters - totalNumbers;
