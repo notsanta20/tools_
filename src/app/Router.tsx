@@ -9,7 +9,7 @@ import PasswordGenerator from "./routes/app/PasswordGenerator";
 
 function Router() {
   return (
-    <div className="px-[20%] py-3 font-(family-name:--font-mono) text-white h-screen flex flex-col">
+    <div className="px-3 lg:px-[20%] 2xl:px-[35%] py-3 font-(family-name:--font-mono) text-white h-dvh flex flex-col">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

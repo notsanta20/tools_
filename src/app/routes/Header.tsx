@@ -3,7 +3,7 @@ import NavLink from "../../components/ui/NavLink";
 
 function Header() {
   return (
-    <header className="border-b-2 border-(--gray-dark) p-2 flex">
+    <header className="border-b-2 border-(--gray-dark) p-2 flex items-center">
       <h1 className="text-lg font-medium flex-auto">
         <Link to={"/"}>tools_</Link>
       </h1>
